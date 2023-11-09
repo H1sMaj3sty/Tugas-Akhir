@@ -2,12 +2,12 @@ package com.example.tugasakhir;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.HorizontalScrollView;
-import android.widget.ImageView;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
 
