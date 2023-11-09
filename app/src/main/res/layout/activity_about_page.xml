@@ -52,6 +52,7 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/facebook"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/icon_acebook"
@@ -60,6 +61,7 @@
 
 
         <Button
+            android:id="@+id/instagram"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/icon_instagram"
@@ -67,6 +69,7 @@
             android:layout_marginRight="16dp" />
 
         <Button
+            android:id="@+id/youtube"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/icon_youtube"
