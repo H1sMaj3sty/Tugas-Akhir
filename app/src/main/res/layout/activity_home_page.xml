@@ -91,6 +91,7 @@
                     android:layout_marginTop="18dp"
                     android:layout_marginStart="140dp"
                     android:contentDescription="go to favorite page"
+                    android:onClick="favFunc"
                     />
 
                 <Button
