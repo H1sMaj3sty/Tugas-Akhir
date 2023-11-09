@@ -8,6 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class homePage extends AppCompatActivity {
 
@@ -81,9 +82,11 @@ public class homePage extends AppCompatActivity {
     public void favFunc (View view) {
         if (count == 0) {
             buttonlike.setBackgroundResource(R.drawable.icon_love_fill);
+            Toast.makeText(this, "Added to Favorites", Toast.LENGTH_LONG).show();
             count += 1;
         } else {
             buttonlike.setBackgroundResource(R.drawable.icon_love);
+            Toast.makeText(this, "Removed from Favorites", Toast.LENGTH_LONG).show();
             count -= 1;
         }
     }
