@@ -84,6 +84,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonLike1"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
@@ -93,6 +94,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonDetail1"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/button"
@@ -102,6 +104,7 @@
                     android:layout_marginTop="159dp"
                     android:layout_marginStart="140dp"
                     android:contentDescription="go to maps"
+                    android:onClick="padarIsland"
                     />
             </androidx.cardview.widget.CardView>
 
@@ -146,6 +149,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonLike2"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
@@ -155,7 +159,7 @@
                     />
 
                 <Button
-
+                    android:id="@+id/buttonDetail2"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/button"
@@ -218,6 +222,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonLike3"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
@@ -227,6 +232,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonDetail3"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/button"
@@ -280,6 +286,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonLike4"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
@@ -289,6 +296,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonDetail4"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/button"
@@ -351,6 +359,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonLike5"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
@@ -360,6 +369,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonDetail5"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/button"
@@ -413,6 +423,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonLike6"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
@@ -422,6 +433,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonDetail6"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/button"
