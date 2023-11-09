@@ -26,7 +26,7 @@ public class detailPage extends AppCompatActivity {
             if(intent.hasExtra("placeTitle")&&intent.hasExtra("placeDesc")&&intent.hasExtra("placeImage")){
                 String title = intent.getStringExtra("placeTitle");
                 String desc = intent.getStringExtra("placeDesc");
-                int imageResource = intent.getIntExtra("image", R.drawable.padar);
+                int imageResource = intent.getIntExtra("placeImage", 0);
 
                 placeTitle.setText(title);
                 placeDesc.setText(desc);

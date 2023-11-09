@@ -169,6 +169,7 @@
                     android:layout_marginTop="159dp"
                     android:layout_marginStart="140dp"
                     android:contentDescription="go to maps"
+                    android:onClick="bromoMt"
                     />
             </androidx.cardview.widget.CardView>
 
@@ -242,6 +243,7 @@
                     android:layout_marginTop="159dp"
                     android:layout_marginStart="140dp"
                     android:contentDescription="go to maps"
+                    android:onClick="rajaAmpat"
                     />
             </androidx.cardview.widget.CardView>
 
@@ -306,6 +308,7 @@
                     android:layout_marginTop="159dp"
                     android:layout_marginStart="140dp"
                     android:contentDescription="go to maps"
+                    android:onClick="danauToba"
                     />
             </androidx.cardview.widget.CardView>
 
@@ -379,6 +382,7 @@
                     android:layout_marginTop="159dp"
                     android:layout_marginStart="140dp"
                     android:contentDescription="go to maps"
+                    android:onClick="boroBudur"
                     />
             </androidx.cardview.widget.CardView>
 
@@ -443,6 +447,7 @@
                     android:layout_marginTop="159dp"
                     android:layout_marginStart="140dp"
                     android:contentDescription="go to maps"
+                    android:onClick="wayKambas"
                     />
             </androidx.cardview.widget.CardView>
 
@@ -496,6 +501,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonLike7"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
@@ -505,6 +511,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonDetail7"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/button"
@@ -514,6 +521,7 @@
                     android:layout_marginTop="159dp"
                     android:layout_marginStart="140dp"
                     android:contentDescription="go to maps"
+                    android:onClick="kawahIjen"
                     />
             </androidx.cardview.widget.CardView>
 
@@ -558,6 +566,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonLike8"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
@@ -567,6 +576,7 @@
                     />
 
                 <Button
+                    android:id="@+id/buttonDetail8"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/button"
@@ -576,6 +586,7 @@
                     android:layout_marginTop="159dp"
                     android:layout_marginStart="140dp"
                     android:contentDescription="go to maps"
+                    android:onClick="diamondBeach"
                     />
             </androidx.cardview.widget.CardView>
 
