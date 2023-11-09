@@ -3,15 +3,23 @@ package com.example.tugasakhir;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class homePage extends AppCompatActivity {
+
+    Button buttonlike;
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+
+        buttonlike = findViewById(R.id.buttonLike1);
     }
 
     public void padarIsland(View view) {
@@ -70,6 +78,15 @@ public class homePage extends AppCompatActivity {
         moveToDesc(title, desc, R.drawable.nusa_penida );
     }
 
+    public void favFunc (View view) {
+        if (count == 0) {
+            buttonlike.setBackgroundResource(R.drawable.icon_love_fill);
+            count += 1;
+        } else {
+            buttonlike.setBackgroundResource(R.drawable.icon_love);
+            count -= 1;
+        }
+    }
 
     public void moveToDesc(String title, String desc, int resourceImage) {
         Intent intent = new Intent(this,detailPage.class);

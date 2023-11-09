@@ -52,25 +52,31 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/facebook"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/icon_acebook"
             android:contentDescription="go to Facebook"
-            android:layout_marginRight="16dp"/>
+            android:layout_marginRight="16dp"
+            android:onClick="faceBook"/>
 
 
         <Button
+            android:id="@+id/instagram"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/icon_instagram"
             android:contentDescription="go to Instagram"
-            android:layout_marginRight="16dp" />
+            android:layout_marginRight="16dp"
+            android:onClick="instaGram"/>
 
         <Button
+            android:id="@+id/youtube"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/icon_youtube"
-            android:contentDescription="go to YouTube" />
+            android:contentDescription="go to YouTube"
+            android:onClick="youTube"/>
     </LinearLayout>
 
 
