@@ -22,10 +22,10 @@
             android:name=".favoritePage"
             android:exported="false" />
         <activity
-            android:name=".homePage"
+            android:name=".aboutPage"
             android:exported="false" />
         <activity
-            android:name=".aboutPage"
+            android:name=".homePage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

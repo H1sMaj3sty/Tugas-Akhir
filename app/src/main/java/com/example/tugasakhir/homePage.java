@@ -16,9 +16,14 @@ public class homePage extends AppCompatActivity {
 
     public void padarIsland(View view) {
         String title = "Padar Island";
-        String desc = "Padar Island is located on west side of indonesia ";
-
+        String desc = "Padar Island, nestled in Komodo National Park, is a paradise for nature enthusiasts. With white sandy beaches, lush hills, and stunning views, it offers an unforgettable adventure. Don't forget your camera";
         moveToDesc(title, desc,R.drawable.padar);
+    }
+
+    public void bromo(View view) {
+        String title = "Bromo";
+        String desc = "Bromo is a Iconic volcano in East Java, Indonesia, known for its surreal landscapes, volcanic craters, and stunning sunrise views.";
+        moveToDesc(title, desc,R.drawable.danau_toba);
     }
 
     public void moveToDesc(String title, String desc, int resourceImage) {
