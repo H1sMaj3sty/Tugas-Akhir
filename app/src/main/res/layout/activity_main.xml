@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
         <HorizontalScrollView
+            android:id="@+id/horizontalScroll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="horizontal">
@@ -18,12 +19,13 @@
                     android:orientation="horizontal">
 
                         <ImageView
+                            android:id="@+id/imageView"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="center"
                             android:src="@drawable/homeimage" />
-                </LinearLayout>
 
+                </LinearLayout>
         </HorizontalScrollView>
 
         <TextView
