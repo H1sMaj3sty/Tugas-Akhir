@@ -18,7 +18,14 @@ public class homePage extends AppCompatActivity {
         String title = "Padar Island";
         String desc = "Padar Island is located on west side of indonesia ";
 
-        moveToDesc(title, desc,R.drawable.padar);
+        moveToDesc(title, desc, R.drawable.padar);
+    }
+
+    public void bromoMt(View view) {
+        String title = "Bromo Mountain";
+        String desc = "Bromo mountain is a  montain";
+
+        moveToDesc(title, desc, R.drawable.bromojuga);
     }
 
     public void moveToDesc(String title, String desc, int resourceImage) {

@@ -169,6 +169,7 @@
                     android:layout_marginTop="159dp"
                     android:layout_marginStart="140dp"
                     android:contentDescription="go to maps"
+                    android:onClick="bromoMt"
                     />
             </androidx.cardview.widget.CardView>
 
