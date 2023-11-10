@@ -111,7 +111,7 @@ public class homePage extends AppCompatActivity {
         String desc = "A captivating volcanic crater in East Java, known for its electric-blue sulfur flames and turquoise lake, offering a surreal and unique natural spectacle.";
         String locAdd = "https://maps.app.goo.gl/7p58Y22Mpq5HXpDk6";
 
-        moveToDesc(title, desc, locAdd, R.drawable.kawah_ijen );
+        moveToDesc(title, desc, locAdd, R.drawable.kawah_ijenn );
     }
 
     public void diamondBeach(View view) {
