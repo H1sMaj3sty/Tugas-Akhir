@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     app:layoutDescription="@xml/splash_scene"
     tools:context=".splashPage"
-    android:background="#F29100"
+    android:background="@color/primary"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
