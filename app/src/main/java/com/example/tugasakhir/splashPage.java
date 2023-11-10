@@ -19,7 +19,7 @@ public class splashPage extends AppCompatActivity {
                 startActivity(new Intent(splashPage.this, MainActivity.class));
                 finish();
             }
-        }, 5000);
+        }, 3000);
 
     }
 }
