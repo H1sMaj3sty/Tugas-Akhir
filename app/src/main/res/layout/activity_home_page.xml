@@ -34,6 +34,8 @@
             android:drawableEnd="@drawable/icon_search"
             android:hint="Search Here!"
             android:padding="10dp"
+            android:imeOptions="actionDone"
+            android:inputType="text"
             />
 
         <LinearLayout

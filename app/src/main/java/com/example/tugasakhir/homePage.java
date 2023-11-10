@@ -5,15 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class homePage extends AppCompatActivity {
 
     Button buttonlike;
+    EditText searchBar;
     private int count = 0;
+    private String locationAdd = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +29,33 @@ public class homePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         buttonlike = findViewById(R.id.buttonLike1);
+        searchBar = findViewById(R.id.serach);
+        searchBar.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    String address = textView.getText().toString();
+                    moveToMap(address);
+                    return true;
+                }
+                return false;
+            }
+        });
+
+        searchBar.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                int DRAWABLE_RIGHT = 2;
+                if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    if (motionEvent.getRawX() >= (searchBar.getRight() - searchBar.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
+                        String address = searchBar.getText().toString();
+                        moveToMap(address);
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
     }
 
     public void padarIsland(View view) {
@@ -109,8 +144,11 @@ public class homePage extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void moveToMap(String locationAdd) {
+        Uri location = Uri.parse("geo:0,0?q="+locationAdd);
+        Intent intent = new Intent(Intent.ACTION_VIEW, location);
 
-
-
+        startActivity(intent);
+    }
 
 }
