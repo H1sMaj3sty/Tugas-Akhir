@@ -48,6 +48,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginStart="30dp"
             android:layout_below="@+id/confirmExit"
+            android:id="@+id/confirmYes"
             />
 
         <Button
@@ -60,17 +61,8 @@
             android:layout_marginTop="40dp"
             android:layout_marginStart="150dp"
             android:layout_below="@+id/confirmExit"
+            android:id="@+id/confirmNo"
             />
     </RelativeLayout>>
-
-    <ImageView
-        android:id="@+id/iconAlert"
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:src="@drawable/icon_alert"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-50dp"
-        />
-
 
 </RelativeLayout>

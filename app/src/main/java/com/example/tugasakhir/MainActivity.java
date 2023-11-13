@@ -2,6 +2,7 @@ package com.example.tugasakhir;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
@@ -16,6 +17,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,20 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        new AlertDialog.Builder(this)
-                .setTitle("Exit")
-                .setMessage("Are You Sure You Want to Exit?")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        finish();
-                    }
-                })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                })
-                .show();
+        showCustomAlert();
     }
 
     private void startAutoScroll() {
@@ -105,5 +94,11 @@ public class MainActivity extends AppCompatActivity {
     public void moveToSecond(View view) {
         Intent intent = new Intent(this, homePage.class);
         startActivity(intent);
+    }
+
+    private void showCustomAlert() {
+        customAlertDialog alertDialog = new customAlertDialog();
+
+        alertDialog.show(getSupportFragmentManager(), "CustomAlertDialog");
     }
 }
