@@ -19,6 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="EXIT"
+            android:fontFamily="@font/poppins_bold"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold"
@@ -34,7 +35,7 @@
             android:textColor="@color/black"
             android:layout_below="@+id/exitText"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
             android:textSize="18sp"
             />
 
@@ -43,12 +44,12 @@
             android:layout_height="wrap_content"
             android:background="@drawable/placeholder"
             android:text="YES"
-            android:textStyle="bold"
             android:textSize="18sp"
             android:layout_marginTop="40dp"
             android:layout_marginStart="30dp"
             android:layout_below="@+id/confirmExit"
             android:id="@+id/confirmYes"
+            android:fontFamily="@font/poppins_bold"
             />
 
         <Button
@@ -56,12 +57,12 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button"
             android:text="NO"
-            android:textStyle="bold"
             android:textSize="18sp"
             android:layout_marginTop="40dp"
             android:layout_marginStart="150dp"
             android:layout_below="@+id/confirmExit"
             android:id="@+id/confirmNo"
+            android:fontFamily="@font/poppins_bold"
             />
     </RelativeLayout>>
 

@@ -15,28 +15,29 @@
             android:id="@+id/serach"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/placeholder"
             android:drawableEnd="@drawable/icon_search"
+            android:fontFamily="@font/poppins_medium"
             android:hint="Search Your Destination Here!"
-            android:padding="10dp"
             android:imeOptions="actionDone"
             android:inputType="text"
-            />
+            android:padding="8dp"
+            android:textSize="16dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Recomendation Destination\nFor You"
-            android:textSize="23sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginTop="145dp"
             android:layout_marginLeft="24dp"
-            />
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Recomendation Destination\nFor You"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
