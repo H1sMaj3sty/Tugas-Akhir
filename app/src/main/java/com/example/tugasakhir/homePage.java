@@ -130,7 +130,7 @@ public class homePage extends AppCompatActivity {
         )) {
             currentClickedButton.setBackgroundResource(R.drawable.icon_love);
             Toast.makeText(this, "Removed from Favorites", Toast.LENGTH_LONG).show();
-        } else         if (currentClickedButton.getBackground().getConstantState().equals(
+        } else if (currentClickedButton.getBackground().getConstantState().equals(
                 ContextCompat.getDrawable(this, R.drawable.icon_love).getConstantState()
         )){
             currentClickedButton.setBackgroundResource(R.drawable.icon_love_fill);
