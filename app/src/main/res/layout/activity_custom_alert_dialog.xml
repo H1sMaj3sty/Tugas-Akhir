@@ -1,69 +1,64 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="320dp"
     android:layout_gravity="center"
-    android:gravity="center"
-    >
+    android:gravity="center">
 
     <RelativeLayout
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:paddingBottom="40dp"
         android:background="@drawable/alert"
-        >
+        android:paddingBottom="40dp">
+
         <TextView
             android:id="@+id/exitText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="EXIT"
-            android:fontFamily="@font/poppins_bold"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold"
             android:layout_marginStart="30dp"
             android:layout_marginTop="25dp"
-            />
+            android:fontFamily="@font/baloo_bhai_2_bold"
+            android:text="EXIT"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/confirmExit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Are You Sure Want to Exit?"
-            android:textColor="@color/black"
             android:layout_below="@+id/exitText"
             android:layout_marginStart="30dp"
-            android:fontFamily="@font/poppins_medium"
-            android:textSize="18sp"
-            />
+            android:fontFamily="@font/baloo_bhai_2_medium"
+            android:text="Are You Sure Want to Exit?"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <Button
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/placeholder"
-            android:text="YES"
-            android:textSize="18sp"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="30dp"
-            android:layout_below="@+id/confirmExit"
             android:id="@+id/confirmYes"
-            android:fontFamily="@font/poppins_bold"
-            />
-
-        <Button
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/button"
-            android:text="NO"
-            android:textSize="18sp"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="150dp"
             android:layout_below="@+id/confirmExit"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/placeholder"
+            android:fontFamily="@font/baloo_bhai_2_bold"
+            android:text="YES"
+            android:textSize="22sp" />
+
+        <Button
             android:id="@+id/confirmNo"
-            android:fontFamily="@font/poppins_bold"
-            />
-    </RelativeLayout>>
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmExit"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/baloo_bhai_2_bold"
+            android:text="NO"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    >
 
 </RelativeLayout>

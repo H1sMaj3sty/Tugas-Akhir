@@ -32,19 +32,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
-            android:layout_marginTop="140dp"
-            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="130dp"
+            android:fontFamily="@font/baloo_bhai_2_bold"
             android:text="Recomendation Destination\nFor You"
             android:textColor="@color/black"
             android:textSize="23sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:lineSpacingExtra="-15dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="16dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="180dp"
             >
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
@@ -185,7 +186,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="16dp"
-            android:layout_marginTop="440dp"
+            android:layout_marginTop="420dp"
             >
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
@@ -326,7 +327,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="16dp"
-            android:layout_marginTop="680dp"
+            android:layout_marginTop="660dp"
             >
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
@@ -467,7 +468,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="16dp"
-            android:layout_marginTop="920dp"
+            android:layout_marginTop="900dp"
             >
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
