@@ -1,6 +1,7 @@
 package com.example.tugasakhir;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
@@ -18,7 +19,6 @@ import android.widget.Toast;
 
 public class homePage extends AppCompatActivity {
 
-    Button buttonlike;
     EditText searchBar;
     private int count = 0;
     private String locationAdd = "";
@@ -28,8 +28,8 @@ public class homePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        buttonlike = findViewById(R.id.buttonLike1);
         searchBar = findViewById(R.id.serach);
+
         searchBar.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
@@ -123,16 +123,19 @@ public class homePage extends AppCompatActivity {
     }
 
     public void favFunc (View view) {
-        if (count == 0) {
-            buttonlike.setBackgroundResource(R.drawable.icon_love_fill);
-            Toast.makeText(this, "Added to Favorites", Toast.LENGTH_LONG).show();
-            count += 1;
-        } else {
-            buttonlike.setBackgroundResource(R.drawable.icon_love);
+        Button currentClickedButton = (Button) view;
+
+        if (currentClickedButton.getBackground().getConstantState().equals(
+                ContextCompat.getDrawable(this, R.drawable.icon_love_fill).getConstantState()
+        )) {
+            currentClickedButton.setBackgroundResource(R.drawable.icon_love);
             Toast.makeText(this, "Removed from Favorites", Toast.LENGTH_LONG).show();
-            count -= 1;
+        } else {
+            currentClickedButton.setBackgroundResource(R.drawable.icon_love_fill);
+            Toast.makeText(this, "Added to Favorites", Toast.LENGTH_LONG).show();
         }
     }
+
 
     public void moveToDesc(String title, String desc, String address, int resourceImage) {
         Intent intent = new Intent(this,detailPage.class);
@@ -151,4 +154,7 @@ public class homePage extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void moveToFav(String title, String location, int drawableStart) {
+
+    }
 }
