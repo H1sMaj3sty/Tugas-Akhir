@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 
 public class homePage extends AppCompatActivity {
 
+    private static final String PREFS_ICON = "Prefs";
     EditText searchBar;
     private int count = 0;
     private String locationAdd = "";
@@ -29,6 +31,8 @@ public class homePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         searchBar = findViewById(R.id.serach);
+
+        loadButtonState();
 
         searchBar.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -136,6 +140,8 @@ public class homePage extends AppCompatActivity {
             currentClickedButton.setBackgroundResource(R.drawable.icon_love_fill);
             Toast.makeText(this, "Added to Favorites", Toast.LENGTH_LONG).show();
         }
+
+        saveButtonState();
     }
 
 
@@ -156,7 +162,33 @@ public class homePage extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void moveToFav(String title, String location, int drawableStart) {
+    private void saveButtonState() {
+        int [] numOfButtons = {R.id.buttonLike1, R.id.buttonLike2, R.id.buttonLike3, R.id.buttonLike4, R.id.buttonLike5, R.id.buttonLike6, R.id.buttonLike7, R.id.buttonLike8};
+        SharedPreferences.Editor editor = getSharedPreferences(PREFS_ICON, MODE_PRIVATE).edit();
 
+        for (int i = 0; i<8; i++) {
+            Button button = findViewById(numOfButtons[i]);
+            boolean isFavorited = button.getBackground().getConstantState().equals(
+                    ContextCompat.getDrawable(this, R.drawable.icon_love_fill).getConstantState()
+            );
+            editor.putBoolean("button_"+i, isFavorited);
+        }
+        editor.apply();
+    }
+
+    private void loadButtonState() {
+        int [] numOfButtons = {R.id.buttonLike1, R.id.buttonLike2, R.id.buttonLike3, R.id.buttonLike4, R.id.buttonLike5, R.id.buttonLike6, R.id.buttonLike7, R.id.buttonLike8};
+        SharedPreferences prefs = getSharedPreferences(PREFS_ICON, MODE_PRIVATE);
+
+        for (int i = 0; i < 8; i++) {
+            Button button = findViewById(numOfButtons[i]);
+            boolean isFavorited = prefs.getBoolean("button_" + i, false);
+
+            if (isFavorited) {
+                button.setBackgroundResource(R.drawable.icon_love_fill);
+            } else {
+                button.setBackgroundResource(R.drawable.icon_love);
+            }
+        }
     }
 }
