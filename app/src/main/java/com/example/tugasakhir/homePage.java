@@ -191,4 +191,9 @@ public class homePage extends AppCompatActivity {
             }
         }
     }
+
+    public void moveToDetail(View view) {
+        Intent intent = new Intent(this, aboutPage.class);
+        startActivity(intent);
+    }
 }

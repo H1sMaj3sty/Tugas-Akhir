@@ -11,6 +11,20 @@
         android:layout_height="250dp"
         android:background="@drawable/background_about" />
 
+    <Button
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/placeholder"
+        android:drawableRight="@drawable/icon_arrow_back"
+        android:padding="6dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="go to back home page"
+        android:onClick="arrowBack"
+        />
+
     <ImageView
         android:layout_width="148dp"
         android:layout_height="123dp"
