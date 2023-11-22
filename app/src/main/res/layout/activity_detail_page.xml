@@ -18,10 +18,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="300dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/baloo_bhai_2_bold"
         android:textColor="@color/black"
-        android:textSize="30dp"
+        android:textSize="33dp"
         android:textStyle="bold" />
 
     <TextView
@@ -29,11 +30,11 @@
         android:layout_width="350dp"
         android:layout_height="250dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="355dp"
         android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins_medium"
         android:textColor="@color/black"
-        android:textSize="20dp"
-        />
+        android:textSize="18dp" />
 
     <Button
         android:id="@+id/buttonDestinasi"
@@ -42,14 +43,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="650dp"
         android:background="@drawable/button"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
+        android:fontFamily="@font/baloo_bhai_2_bold"
+        android:onClick="gotoMap"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:text="View Destination"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:onClick="gotoMap"
-        />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/back"

@@ -32,4 +32,8 @@ public class aboutPage extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(ytUrl));
         startActivity(intent);
     }
+    public void arrowBack(View view) {
+        Intent intent = new Intent(this, homePage.class);
+        startActivity(intent);
+    }
 }

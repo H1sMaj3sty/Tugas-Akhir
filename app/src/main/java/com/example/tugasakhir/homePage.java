@@ -32,7 +32,7 @@ public class homePage extends AppCompatActivity {
 
         searchBar = findViewById(R.id.serach);
 
-        loadButtonState();
+//        loadButtonState();
 
         searchBar.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -141,7 +141,7 @@ public class homePage extends AppCompatActivity {
             Toast.makeText(this, "Added to Favorites", Toast.LENGTH_LONG).show();
         }
 
-        saveButtonState();
+//        saveButtonState();
     }
 
 
@@ -190,5 +190,10 @@ public class homePage extends AppCompatActivity {
                 button.setBackgroundResource(R.drawable.icon_love);
             }
         }
+    }
+
+    public void moveToDetail(View view) {
+        Intent intent = new Intent(this, aboutPage.class);
+        startActivity(intent);
     }
 }

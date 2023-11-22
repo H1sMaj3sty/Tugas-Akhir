@@ -11,6 +11,20 @@
         android:layout_height="250dp"
         android:background="@drawable/background_about" />
 
+    <Button
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/placeholder"
+        android:drawableRight="@drawable/icon_arrow_back"
+        android:padding="6dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="go to back home page"
+        android:onClick="arrowBack"
+        />
+
     <ImageView
         android:layout_width="148dp"
         android:layout_height="123dp"
@@ -25,6 +39,7 @@
         android:layout_below="@id/background"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
+        android:fontFamily="@font/baloo_bhai_2_bold"
         android:text="ABOUT US!"
         android:textColor="@color/black"
         android:textSize="28sp"
@@ -36,13 +51,13 @@
         android:layout_below="@id/judul"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins_medium"
         android:text="Welcome to our Tourism App! We are dedicated to providing travelers with an extraordinary journey and delivering valuable information to those who use this application."
-        android:textColor="@color/black"
-        android:textSize="18sp"
         android:textAlignment="center"
-        />
+        android:textColor="@color/black"
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
