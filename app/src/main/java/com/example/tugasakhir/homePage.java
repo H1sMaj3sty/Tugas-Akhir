@@ -32,7 +32,7 @@ public class homePage extends AppCompatActivity {
 
         searchBar = findViewById(R.id.serach);
 
-//        loadButtonState();
+        loadButtonState();
 
         searchBar.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -128,20 +128,19 @@ public class homePage extends AppCompatActivity {
 
     public void favFunc (View view) {
         Button currentClickedButton = (Button) view;
+        String tag = currentClickedButton.getTag().toString();
 
-        if (currentClickedButton.getBackground().getConstantState().equals(
-                ContextCompat.getDrawable(this, R.drawable.icon_love_fill).getConstantState()
-        )) {
-            currentClickedButton.setBackgroundResource(R.drawable.icon_love);
-            Toast.makeText(this, "Removed from Favorites", Toast.LENGTH_LONG).show();
-        } else if (currentClickedButton.getBackground().getConstantState().equals(
-                ContextCompat.getDrawable(this, R.drawable.icon_love).getConstantState()
-        )){
+        if (tag.equals("empty")) {
             currentClickedButton.setBackgroundResource(R.drawable.icon_love_fill);
+            currentClickedButton.setTag("filled");
             Toast.makeText(this, "Added to Favorites", Toast.LENGTH_LONG).show();
+        } else if (tag.equals("filled")) {
+            currentClickedButton.setBackgroundResource(R.drawable.icon_love);
+            currentClickedButton.setTag("empty");
+            Toast.makeText(this, "Removed to Favorites", Toast.LENGTH_LONG).show();
         }
 
-//        saveButtonState();
+        saveButtonState();
     }
 
 
@@ -168,9 +167,7 @@ public class homePage extends AppCompatActivity {
 
         for (int i = 0; i<8; i++) {
             Button button = findViewById(numOfButtons[i]);
-            boolean isFavorited = button.getBackground().getConstantState().equals(
-                    ContextCompat.getDrawable(this, R.drawable.icon_love_fill).getConstantState()
-            );
+            boolean isFavorited = button.getTag().equals("filled");
             editor.putBoolean("button_"+i, isFavorited);
         }
         editor.apply();
@@ -186,8 +183,10 @@ public class homePage extends AppCompatActivity {
 
             if (isFavorited) {
                 button.setBackgroundResource(R.drawable.icon_love_fill);
+                button.setTag("filled");
             } else {
                 button.setBackgroundResource(R.drawable.icon_love);
+                button.setTag("empty");
             }
         }
     }

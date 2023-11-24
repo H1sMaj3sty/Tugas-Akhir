@@ -12,14 +12,15 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/about"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:id="@+id/about"
             android:background="@drawable/icon_about"
             android:layout_marginTop="18dp"
-            android:layout_marginStart="360dp"
+            android:layout_marginRight="20dp"
             android:contentDescription="go to about page"
             android:onClick="moveToDetail"
+            android:layout_alignParentRight="true"
             />
 
         <EditText
@@ -27,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="57dp"
+            android:layout_marginTop="65dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/placeholder"
@@ -91,7 +92,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/location_icon"
-                    android:text="Nusa Tenggara Timur"
+                    android:text="NTT"
                     android:textSize="10sp"
                     android:textColor="@color/white"
                     android:layout_gravity="bottom"
@@ -105,9 +106,11 @@
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
                     android:layout_marginTop="18dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="right"
                     android:contentDescription="go to favorite page"
                     android:onClick="favFunc"
+                    android:tag="empty"
                     />
 
                 <Button
@@ -117,9 +120,9 @@
                     android:background="@drawable/button"
                     android:drawableRight="@drawable/icon_arrow"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="159dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="25dp"
                     android:contentDescription="go to maps"
                     android:onClick="padarIsland"
                     />
@@ -171,9 +174,11 @@
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
                     android:layout_marginTop="18dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="right"
                     android:contentDescription="go to favorite page"
                     android:onClick="favFunc"
+                    android:tag="empty"
                     />
 
                 <Button
@@ -183,9 +188,9 @@
                     android:background="@drawable/button"
                     android:drawableRight="@drawable/icon_arrow"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="159dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="25dp"
                     android:contentDescription="go to maps"
                     android:onClick="bromoMt"
                     />
@@ -246,9 +251,11 @@
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
                     android:layout_marginTop="18dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="right"
                     android:contentDescription="go to favorite page"
                     android:onClick="favFunc"
+                    android:tag="empty"
                     />
 
                 <Button
@@ -258,9 +265,9 @@
                     android:background="@drawable/button"
                     android:drawableRight="@drawable/icon_arrow"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="159dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="25dp"
                     android:contentDescription="go to maps"
                     android:onClick="rajaAmpat"
                     />
@@ -312,9 +319,11 @@
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
                     android:layout_marginTop="18dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="right"
                     android:contentDescription="go to favorite page"
                     android:onClick="favFunc"
+                    android:tag="empty"
                     />
 
                 <Button
@@ -324,9 +333,9 @@
                     android:background="@drawable/button"
                     android:drawableRight="@drawable/icon_arrow"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="159dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="25dp"
                     android:contentDescription="go to maps"
                     android:onClick="danauToba"
                     />
@@ -387,9 +396,11 @@
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
                     android:layout_marginTop="18dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="right"
                     android:contentDescription="go to favorite page"
                     android:onClick="favFunc"
+                    android:tag="empty"
                     />
 
                 <Button
@@ -399,9 +410,9 @@
                     android:background="@drawable/button"
                     android:drawableRight="@drawable/icon_arrow"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="159dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="25dp"
                     android:contentDescription="go to maps"
                     android:onClick="boroBudur"
                     />
@@ -453,9 +464,11 @@
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
                     android:layout_marginTop="18dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="right"
                     android:contentDescription="go to favorite page"
                     android:onClick="favFunc"
+                    android:tag="empty"
                     />
 
                 <Button
@@ -465,9 +478,9 @@
                     android:background="@drawable/button"
                     android:drawableRight="@drawable/icon_arrow"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="159dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="25dp"
                     android:contentDescription="go to maps"
                     android:onClick="wayKambas"
                     />
@@ -528,9 +541,11 @@
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
                     android:layout_marginTop="18dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="right"
                     android:contentDescription="go to favorite page"
                     android:onClick="favFunc"
+                    android:tag="empty"
                     />
 
                 <Button
@@ -540,9 +555,9 @@
                     android:background="@drawable/button"
                     android:drawableRight="@drawable/icon_arrow"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="159dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="25dp"
                     android:contentDescription="go to maps"
                     android:onClick="kawahIjen"
                     />
@@ -594,9 +609,11 @@
                     android:layout_height="25dp"
                     android:background="@drawable/icon_love"
                     android:layout_marginTop="18dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="right"
                     android:contentDescription="go to favorite page"
                     android:onClick="favFunc"
+                    android:tag="empty"
                     />
 
                 <Button
@@ -606,9 +623,9 @@
                     android:background="@drawable/button"
                     android:drawableRight="@drawable/icon_arrow"
                     android:padding="4dp"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="159dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="25dp"
                     android:contentDescription="go to maps"
                     android:onClick="diamondBeach"
                     />

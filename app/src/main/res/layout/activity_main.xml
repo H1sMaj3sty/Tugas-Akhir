@@ -31,14 +31,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
             android:fontFamily="@font/baloo_bhai_2_extrabold"
-            android:paddingLeft="30dp"
+            android:layout_marginLeft="23dp"
             android:text="Welcome To Our Application!"
             android:textColor="@color/white"
             android:textSize="45dp"
             android:textStyle="bold"
-            android:lineSpacingExtra="-20dp"
+            android:lineSpacingExtra="-10dp"
             />
 
         <Button
